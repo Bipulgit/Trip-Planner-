@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <title>Tripsee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Brand Name and Logo with space from the start -->
+            <a class="navbar-brand ms-5 text-start" href="#">
+                <img src="img/logo.png" alt="Tripsee" width="30" height="30">
+                Tripsee
+            </a>
+
+            <!-- Currency Dropdown with space from the end -->
+            <div class="dropdown me-5 ms-auto">
+                <button class="btn dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class=""><img src="img/flag.png" alt="INR Flag" width="20" height="15"></span>
+                    INR ₹
+                </button>
+                <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                    <a class="dropdown-item" href="#">
+                        <img src="flags/usd.png" alt="USD Flag" width="20" height="15" class="me-2"> USD $
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="flags/eur.png" alt="EUR Flag" width="20" height="15" class="me-2"> EUR €
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- navbar end -->
+    <!-- carousal start -->
+
+    <div id="baliCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image" style="background-image: url('img/banner\ 1.png');"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image" style="background-image: url('img/banner\ 2.png');"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image" style="background-image: url('img/banner\ 3.png');"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image" style="background-image: url('img/banner\ 4.png');"></div>
+            </div>
+        </div>
+
+        <!-- Static text content outside of carousel -->
+        <div class="carousel-caption text-center">
+            <h1 class="display-4 text-white">Best of Bali: Luxury & Adventure Package!</h1>
+            <hr class="mx-auto my-3" style="height: 5px; width: 60%; background-color: white;">
+            <p class="details text-light mb-4">5 Days/ 4 Nights | 2D Kuta • 5D Ubud</p>
+            <h3 class="fw-bold text-white bordered-text mb-4">INR 41,250</h3>
+            <button class="btn btn-primary text-center text-white">Send Enquiry</button>
+        
+            <div class="rating d-flex flex-wrap justify-content-center gap-4 mt-4">
+                <div class="text-center">
+                    <img src="img/trip advisor.png" alt="Trip Advisor" class="img-fluid mb-2" style="max-width: 60px;">
+                    <span class="text-light d-block">4.5/5<br>Trip Advisor</span>
+                </div>
+                <div class="text-center">
+                    <img src="img/star icon 2.png" alt="Trust Pilot" class="img-fluid mb-2" style="max-width: 60px;">
+                    <span class="text-light d-block">4.0/5<br>Trust Pilot</span>
+                </div>
+                <div class="text-center">
+                    <img src="img/flat-color-icons_google.png" alt="Google" class="img-fluid mb-2" style="max-width: 60px;">
+                    <span class="text-light d-block">4.4/5<br>Google</span>
+                </div>
+                <div class="text-center">
+                    <img src="img/star icon.png" alt="Reviews.io" class="img-fluid mb-2" style="max-width: 60px;">
+                    <span class="text-light d-block">4.3/5<br>Reviews.io</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#baliCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#baliCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- carousal end -->
+
+    <!-- heading -->
+    <section>
+        <div class="container heading mt-4">
+            <h1>Best of Bali | Luxury & Adventure Package</h1>
+            <p class="mt-2 text-secondary fs-4 gx-2">(Complimentary Honeymoon Inclusions)</p>
+        </div>
+        <div class="container">
+            <div class="info-box">
+                <span class="highlight-box">5 Days / 4 Nights</span>
+                <span class="location-text">
+                    <i class="bi bi-geo-alt-fill"></i> Bali
+                </span>
+                <span class="stars">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                </span>
+                <span class="reviews">(348 Reviews)</span>
+            </div>
+        </div>
+    </section>
+    <!-- heading end  -->
+
+    <!-- Facility start  -->
+
+    <div class="container facility-section">
+        <h5 class="text-start fs-4">Facility Included</h5>
+        <div class="row align-items-start mt-0">
+            <!-- Service Box -->
+            <div class="col-lg-8 col-md-7 col-sm-12">
+                <div class="service-box">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-wrap justify-content-between">
+                            <div class="service-item">
+                                <h5>Meals</h5>
+                                <p>"Meals in Bali: A Taste of Paradise on Every Plate!"</p>
+                            </div>
+                            <div class="service-item">
+                                <h5>Transfer</h5>
+                                <p>"Transfer in Bali: Seamless Journeys, Island Style!"</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex flex-wrap justify-content-between mt-3">
+                            <div class="service-item">
+                                <h5>Stay</h5>
+                                <p>"Stay in Bali: Your Home in the Heart of Paradise!"</p>
+                            </div>
+                            <div class="service-item">
+                                <h5>Sightseeing</h5>
+                                <p>"Sightseeing in Bali: Explore Paradise, One Wonder at a Time!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Box -->
+            <div class="col-lg-4 col-md-5 col-sm-12 mt-0 mt-md-0">
+                <div class="price-box">
+                    <h5>Starting From</h5>
+                    <p class="text-muted text-decoration-line-through">INR 45,669</p>
+                    <h3 class="text-danger fw-bold">INR 45,669/-* per adult</h3>
+                    <p>Please note that the rates may vary on specific blackout dates.</p>
+                    <button class="btn btn-warning text-white ">Send Enquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- highlight package start -->
+    <div class="container highlights-section">
+        <h2 class="text-start fs-4"><b>Highlights Of Package</b></h2>
+        <div class="row">
+            <!-- Highlights Section -->
+            <div class="col-lg-8 col-md-7">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span class="list-number"></span> Enjoy the Kecak fire dance performance
+                        at Uluwatu Temple, where traditional
+                        dance and dramatic sunset create an unforgettable cultural experience.
+                    </li>
+                    <li class="list-group-item"><span class="list-number"></span> Experience the romance of Bali, where
+                        sunset strolls along pristine beaches,
+                        dinners under the stars, and amazing moments in lush rice terraces create unforgettable
+                        memories.
+                    </li>
+                    <li class="list-group-item"><span class="list-number"></span> Indulge in a Balinese massage
+                        experience, where rhythmic strokes, acupressure,
+                        and aromatic oils come together to offer a deeply relaxing experience.
+                    </li>
+                    <li class="list-group-item"><span class="list-number"></span> Set sail on a thrilling Pirate Dinner
+                        Cruise, where lively pirate-themed
+                        entertainment, delicious cuisine, and stunning ocean views create an unforgettable evening.
+                    </li>
+                    <li class="list-group-item"><span class="list-number"></span> Explore the stunning Tegallalang Rice
+                        Terraces, where tiered landscapes of lush
+                        greenery create a serene atmosphere and offer a glimpse into Bali’s traditional farming culture.
+                    </li>
+                    <li class="list-group-item"><span class="list-number"></span> Yacht party complimentary with our
+                        package.
+                    </li>
+                    <li class="list-group-item"><span class="list-number"></span> Offbeat locations such as Dolphin
+                        Watching, Lahangan Sweet, Kanto Lampo
+                        Waterfall etc.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Enquiry Form -->
+            <div class="col-lg-4 col-md-5 mt-4 mt-md-0">
+                <div class="enquiry-form">
+                    <h5 class="text-center"><b>Exclusive Bali Honeymoon | Balinese Couple Massage</b></h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone no</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+91 Phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date of Travel</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <div class="mb-3">
+                            <label for="travelers" class="form-label">No. of Travellers</label>
+                            <input type="number" class="form-control" id="travelers"
+                                placeholder="Enter no of travellers">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Enter your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 Enquiry-btn ">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- highlight package end -->
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="custom-card">
+                    <!-- Image Slider -->
+                    <div id="customCarouselExample" class="carousel slide custom-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/image 1.png" alt="Dolphin Watching">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/600x300" alt="Dolphin Watching">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/600x300" alt="Dolphin Watching">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#customCarouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#customCarouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <!-- Slider Thumbnails -->
+                        <div class="slider-thumbnails">
+                            <img src="https://via.placeholder.com/30x30" alt="Thumbnail 1">
+                            <img src="https://via.placeholder.com/30x30" alt="Thumbnail 2">
+                            <div class="more">+4</div>
+                        </div>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="custom-card-body">
+                        <h5>Dolphin Watching</h5>
+                        <p>Dolphin watching is a delightful activity that offers a chance to observe these intelligent
+                            and playful marine mammals in their natural habitat. Typically conducted in coastal regions,
+                            the experience often involves guided boat tours led by experts who share insights about
+                            dolphin behavior, ecology, and conservation.</p>
+                        <a href="#" class="read-more mt-0">Read more</a>
+                    </div>
+                </div>
+
+                <!-- second  -->
+                <div class="custom-card mt-4">
+                    <!-- Image Slider -->
+                    <div id="customCarouselExample" class="carousel slide custom-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/image 1.png" alt="Dolphin Watching">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/600x300" alt="Dolphin Watching">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/600x300" alt="Dolphin Watching">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#customCarouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#customCarouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <!-- Slider Thumbnails -->
+                        <div class="slider-thumbnails">
+                            <img src="https://via.placeholder.com/30x30" alt="Thumbnail 1">
+                            <img src="https://via.placeholder.com/30x30" alt="Thumbnail 2">
+                            <div class="more">+4</div>
+                        </div>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="custom-card-body">
+                        <h5>Dolphin Watching</h5>
+                        <p>Dolphin watching is a delightful activity that offers a chance to observe these intelligent
+                            and playful marine mammals in their natural habitat. Typically conducted in coastal regions,
+                            the experience often involves guided boat tours led by experts who share insights about
+                            dolphin behavior, ecology, and conservation.</p>
+                        <a href="#" class="read-more mt-0">Read more</a>
+                    </div>
+                </div>
+
+                <!-- third -->
+                <div class="custom-card mt-4">
+                    <!-- Image Slider -->
+                    <div id="customCarouselExample" class="carousel slide custom-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/image 1.png" alt="Dolphin Watching">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/600x300" alt="Dolphin Watching">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/600x300" alt="Dolphin Watching">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#customCarouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#customCarouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <!-- Slider Thumbnails -->
+                        <div class="slider-thumbnails">
+                            <img src="https://via.placeholder.com/30x30" alt="Thumbnail 1">
+                            <img src="https://via.placeholder.com/30x30" alt="Thumbnail 2">
+                            <div class="more">+4</div>
+                        </div>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="custom-card-body">
+                        <h5>Dolphin Watching</h5>
+                        <p>Dolphin watching is a delightful activity that offers a chance to observe these intelligent
+                            and playful marine mammals in their natural habitat. Typically conducted in coastal regions,
+                            the experience often involves guided boat tours led by experts who share insights about
+                            dolphin behavior, ecology, and conservation.</p>
+                        <a href="#" class="read-more mt-0">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- travel destination start  -->
+
+    <div class="container highlights-section mt-4">
+        <h2>Travel <span class="text-danger">Duration</span></h2>
+        <p>Your Bali Adventure Awaits</p>
+        <div class="row g-4">
+            <!-- First Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card travel-card">
+                    <img src="img/travel 1.png" class="card-img-top" alt="Travel Destination">
+                    <div class="card-overlay">
+                        <h2>4 Days</h2>
+                        <hr>
+                        <p>Starting at | ₹ 25,000/-</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card travel-card">
+                    <img src="img/travel 2.png" class="card-img-top" alt="Travel Destination">
+                    <div class="card-overlay">
+                        <h2>5 Days</h2>
+                        <hr>
+                        <p>Starting at | ₹ 30,000/-</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card travel-card">
+                    <img src="img/travel 3.png" class="card-img-top" alt="Travel Destination">
+                    <div class="card-overlay">
+                        <h2>6 Days</h2>
+                        <hr>
+                        <p>Starting at | ₹ 35,000/-</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card travel-card">
+                    <img src="img/travel 4.png" class="card-img-top" alt="Travel Destination">
+                    <div class="card-overlay">
+                        <h2>7 Days</h2>
+                        <hr>
+                        <p>Starting at | ₹ 40,000/-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- travel destination end  -->
+
+
+    <!-- Staff Handpicked start  -->
+    <div class="container my-5">
+        <h2>Staff <span class="text-danger">Handpicked</span></h2>
+        <p>Your Bali Adventure Awaits</p>
+        <!-- Responsive Flexbox Row for Cards -->
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card hotel-card position-relative">
+                        <img src="img/Staff 1.png" alt="Ulaman Eco Luxury Retreat">
+                        <div class="hotel-card-body text-white">
+                            <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                            <h5>Ulaman Eco Luxury Retreat</h5>
+                            <p>$48.25</p>
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-custom">Avail This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hotel-card position-relative">
+                        <img src="img/staff 2.png" alt="Bubble Hotel - Ubud and Bubble Hotel">
+                        <div class="hotel-card-body text-white">
+                            <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                            <h5>Bubble Hotel - Ubud and Bubble Hotel</h5>
+                            <p>$48.25</p>
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-custom">Avail This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hotel-card position-relative">
+                        <img src="img/staf 3.png" alt="Apurva Kempinski">
+                        <div class="hotel-card-body text-white">
+                            <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                            <h5>Apurva Kempinski</h5>
+                            <p>$48.25</p>
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-custom">Avail This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <!-- Responsive Flexbox Row for Cards -->
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="container my-5">
+                    <!-- <h2 class="text-start mb-4">Best <span style="color: #d9534f;">Hotels</span> Around</h2>
+                <p class="text-start' text-muted">Your Bali Adventure Awaits</p> -->
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card hotel-card position-relative">
+                                <img src="img/staff 4.png" alt="Ulaman Eco Luxury Retreat">
+                                <div class="hotel-card-body text-white">
+                                    <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                                    <h5>Ulaman Eco Luxury Retreat</h5>
+                                    <p>$48.25</p>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                        <button class="btn btn-custom">Avail This Offer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card hotel-card position-relative">
+                                <img src="img/staff 5.png" alt="Bubble Hotel - Ubud and Bubble Hotel">
+                                <div class="hotel-card-body text-white">
+                                    <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                                    <h5>Bubble Hotel - Ubud and Bubble Hotel</h5>
+                                    <p>$48.25</p>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                        <button class="btn btn-custom">Avail This Offer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card hotel-card position-relative">
+                                <img src="img/staff 6.png" alt="Apurva Kempinski">
+                                <div class="hotel-card-body text-white">
+                                    <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                                    <h5>Apurva Kempinski</h5>
+                                    <p>$48.25</p>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                        <button class="btn btn-custom">Avail This Offer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Staff Handpicked end -->
+
+        <!-- Package start -->
+
+        <div class="container package-section">
+            <div class="section-header">What’s inside the <span>Package?</span></div>
+            <div class="section-subheader">Your Bali Adventure Awaits</div>
+
+            <!-- Shared Header Box -->
+            <div class="header-box">
+                <div>Inclusions</div>
+                <div>Exclusions</div>
+            </div>
+
+            <!-- Shared List Box -->
+            <div class="list-box">
+                <div class="row">
+                    <!-- Inclusions -->
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> 2 nights stay in Ubud with
+                                breakfast
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> 3 nights stay in Kuta with
+                                breakfast and lunch or dinner
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Kintamani With Bali Jungle Swing
+                                Combo Tour
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Balinese Massage in Kuta
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Water Sports in Bali with Pirate
+                                Dinner Cruise and ticket
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Nusa Penida West Tour With 4
+                                Beaches
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Airport transfer from Ngurah Rai to
+                                Deluxe Hotel
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Daily Breakfast
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-success bi bi-check-circle-fill"></i> Visa assistance
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Exclusions -->
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="text-danger bi bi-x-circle-fill"></i> Expenses of a personal nature
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-danger bi bi-x-circle-fill"></i> Meals not mentioned in the itinerary or
+                                inclusions
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-danger bi bi-x-circle-fill"></i> Visa Charges
+                            </li>
+                            <li class="list-group-item">
+                                <i class="text-danger bi bi-x-circle-fill"></i> Travel Insurance
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- package end  -->
+
+
+        <!-- why choose us start -->
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left Section -->
+                <div class="col-md-6 position-relative">
+                    <div class="main-image  overflow-hidden">
+                        <img src="img/why choose.png" alt="Candlelight Dinner" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Right Section -->
+                <div class="col-md-6">
+                    <h2 class="mb-3">
+                        <span class="text-danger">Why</span> Choose Us
+                    </h2>
+                    <p class="mb-4">Enjoy different experiences in every place you visit and discover new and affordable
+                        adventures of course.</p>
+                    <div class="list-group">
+                        <div class="list-group-item d-flex align-items-center">
+                            <img src="img/choose 1.png" alt="Icon" class="me-3">
+                            <span>20 types of candle light dinners.</span>
+                        </div>
+                        <div class="list-group-item d-flex align-items-center">
+                            <img src="img/choose 2.png" alt="Icon" class="me-3">
+                            <span>Luxury Romantic packages</span>
+                        </div>
+                        <div class="list-group-item d-flex align-items-center">
+                            <img src="img/choose 3.png" alt="Icon" class="me-3">
+                            <span>Photoshoot/Video and Drone shoot</span>
+                        </div>
+                        <div class="list-group-item d-flex align-items-center">
+                            <img src="img/choose 4.png" alt="Icon" class="me-3">
+                            <span>Riverside candle light dinner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- why choose us end  -->
+
+        <!-- best hotels around start -->
+
+        <div class="container my-5">
+            <h2 class="text-start mb-4">Best <span style="color: #d9534f;">Hotels</span> Around</h2>
+            <p class="text-start' text-muted">Your Bali Adventure Awaits</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card hotel-card position-relative">
+                        <img src="img/hotels 1.png" alt="Ulaman Eco Luxury Retreat">
+                        <div class="hotel-card-body text-white">
+                            <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                            <h5>Ulaman Eco Luxury Retreat</h5>
+                            <p>$48.25</p>
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-custom">Avail This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hotel-card position-relative">
+                        <img src="img/hotels 2.png" alt="Bubble Hotel - Ubud and Bubble Hotel">
+                        <div class="hotel-card-body text-white">
+                            <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                            <h5>Bubble Hotel - Ubud and Bubble Hotel</h5>
+                            <p>$48.25</p>
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-custom">Avail This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hotel-card position-relative">
+                        <img src="img/hotels 3.png" alt="Apurva Kempinski">
+                        <div class="hotel-card-body text-white">
+                            <p>6 Days & 5 Nights <span class="float-end">★★★★★</span></p>
+                            <h5>Apurva Kempinski</h5>
+                            <p>$48.25</p>
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-light"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-custom">Avail This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- best hotels around end  -->
+
+        <!-- rating and reviews start  -->
+
+        <div class="container">
+            <div class="section-header">Ratings & <span style="color: #ff5722;">Reviews</span></div>
+            <div class="section-subheader">Your Bali Adventure Awaits</div>
+            <div class="card1">
+                <div class="row">
+                    <!-- Left Column: Overall Rating -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <div style="font-size: 48px; font-weight: bold; color: #333;">4.30</div>
+                                <div class="ms-3" style="color: #666; font-size: 14px;">854 Reviews</div>
+                            </div>
+                            <div class="rating-stars mt-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star inactive"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Rating Categories -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="rating-category">Guide</div>
+                            <div class="progress w-50">
+                                <div class="progress-bar" style="width: 96%;"></div>
+                            </div>
+                            <div style="font-size: 14px; color: #555;">4.8</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="rating-category">Transportation</div>
+                            <div class="progress w-50">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                            <div style="font-size: 14px; color: #555;">3.0</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="rating-category">Value for money</div>
+                            <div class="progress w-50">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <div style="font-size: 14px; color: #555;">4.5</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="rating-category">Safety</div>
+                            <div class="progress w-50">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                            <div style="font-size: 14px; color: #555;">4.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- rating and reviews end  -->
+
+        <!-- gallery start  -->
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- Main Image -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <img src="img/gallery 1.png" class="main-image1 " alt="Main Landscape">
+                    </div>
+                </div>
+                <!-- Sub Images -->
+                <div class="col-md-6">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="img/gallery 2.png" class="sub-image w-100 rounded" alt="Sub Image 1">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/gallery 3.png" class="sub-image w-100 rounded" alt="Sub Image 2">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/gallery 4.png" class="sub-image w-100 rounded" alt="Sub Image 3">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/gallery 5.png" class="sub-image w-100 rounded" alt="Sub Image 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- gallery end  -->
+
+        <!-- public reviews start  -->
+        <div class="testimonial-card">
+            <div class="d-flex align-items-center">
+                <div class="profile-circle"></div>
+                <div>
+                    <h5><strong><span class="profile-dash">—</span>Sarah & James</strong></h5>
+                    <p class="text-muted">Behavioral Science</p>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
+                    <span class="rating"><strong>4.2</strong> ⭐⭐⭐⭐⭐</span>
+                    <span class="ms-3 quote-icon">❝</span>
+                </div>
+            </div>
+            <p class="mt-3">
+                “Bali was everything we dreamed of for our honeymoon! From the private pool villa in Ubud overlooking
+                lush rice terraces to the romantic candlelit dinner on the beach in Jimbaran, every moment felt magical.
+                The locals were incredibly welcoming, and the island's beauty took our breath away. We'll cherish these
+                memories forever!”
+            </p>
+
+            <div class="row gallery mt-4">
+                <div class="col-md-3">
+                    <img src="img/reviews 1.png" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 2.png" alt="Gallery Image 2">
+
+                </div>
+                <div class="col-md-3">
+                    <img src="img/revies 3.png" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 5.png" alt="Gallery Image 4">
+                    <div class="overlay-text">+14</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="d-flex align-items-center">
+                <div class="profile-circle"></div>
+                <div>
+                    <h5><strong><span class="profile-dash">—</span>Sarah & James</strong></h5>
+                    <p class="text-muted">Behavioral Science</p>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
+                    <span class="rating"><strong>4.2</strong> ⭐⭐⭐⭐⭐</span>
+                    <span class="ms-3 quote-icon">❝</span>
+                </div>
+            </div>
+            <p class="mt-3">
+                “Bali was everything we dreamed of for our honeymoon! From the private pool villa in Ubud overlooking
+                lush rice terraces to the romantic candlelit dinner on the beach in Jimbaran, every moment felt magical.
+                The locals were incredibly welcoming, and the island's beauty took our breath away. We'll cherish these
+                memories forever!”
+            </p>
+
+            <div class="row gallery mt-4">
+                <div class="col-md-3">
+                    <img src="img/reviews 1.png" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 2.png" alt="Gallery Image 2">
+
+                </div>
+                <div class="col-md-3">
+                    <img src="img/revies 3.png" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 5.png" alt="Gallery Image 4">
+                    <div class="overlay-text">+14</div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="d-flex align-items-center">
+                <div class="profile-circle"></div>
+                <div>
+                    <h5><strong><span class="profile-dash">—</span>Sarah & James</strong></h5>
+                    <p class="text-muted">Behavioral Science</p>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
+                    <span class="rating"><strong>4.2</strong> ⭐⭐⭐⭐⭐</span>
+                    <span class="ms-3 quote-icon">❝</span>
+                </div>
+            </div>
+            <p class="mt-3">
+                “Bali was everything we dreamed of for our honeymoon! From the private pool villa in Ubud overlooking
+                lush rice terraces to the romantic candlelit dinner on the beach in Jimbaran, every moment felt magical.
+                The locals were incredibly welcoming, and the island's beauty took our breath away. We'll cherish these
+                memories forever!”
+            </p>
+
+            <div class="row gallery mt-4">
+                <div class="col-md-3">
+                    <img src="img/reviews 1.png" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 2.png" alt="Gallery Image 2">
+
+                </div>
+                <div class="col-md-3">
+                    <img src="img/revies 3.png" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 5.png" alt="Gallery Image 4">
+                    <div class="overlay-text">+14</div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="d-flex align-items-center">
+                <div class="profile-circle"></div>
+                <div>
+                    <h5><strong><span class="profile-dash">—</span>Sarah & James</strong></h5>
+                    <p class="text-muted">Behavioral Science</p>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
+                    <span class="rating"><strong>4.2</strong> ⭐⭐⭐⭐⭐</span>
+                    <span class="ms-3 quote-icon">❝</span>
+                </div>
+            </div>
+            <p class="mt-3">
+                “Bali was everything we dreamed of for our honeymoon! From the private pool villa in Ubud overlooking
+                lush rice terraces to the romantic candlelit dinner on the beach in Jimbaran, every moment felt magical.
+                The locals were incredibly welcoming, and the island's beauty took our breath away. We'll cherish these
+                memories forever!”
+            </p>
+
+            <div class="row gallery mt-4">
+                <div class="col-md-3">
+                    <img src="img/reviews 1.png" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 2.png" alt="Gallery Image 2">
+
+                </div>
+                <div class="col-md-3">
+                    <img src="img/revies 3.png" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-3 overlay">
+                    <img src="img/reviews 5.png" alt="Gallery Image 4">
+                    <div class="overlay-text">+14</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- public reviews end  -->
+
+        <!-- videos reviews start  -->
+
+        <div class="container py-2">
+            <h2>Videos <span class="text-danger">Reviews</span></h2>
+            <p>Your Best Adventure Awaits</p>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="review-card position-relative">
+                        <img src="img/Videos 1.png" alt="Review 1">
+                        <div class="play-button">&#9658;</div>
+                        <div class="p-3 bg-primary text-white">
+                            <h5>Amith & Kaajal</h5>
+                            <p>Travel Blogger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="review-card position-relative">
+                        <img src="img/videos 2.png" alt="Review 2">
+                        <div class="play-button">&#9658;</div>
+                        <div class="p-3 bg-primary text-white">
+                            <h5>Sanya & Uday</h5>
+                            <p>Adventure Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="review-card position-relative">
+                        <img src="img/video 3.png" alt="Review 3">
+                        <div class="play-button">&#9658;</div>
+                        <div class="p-3 bg-primary text-white">
+                            <h5>Pranabh Gupta</h5>
+                            <p>Behavioral Science</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="review-card position-relative">
+                        <img src="img/videos 4.png" alt="Review 4">
+                        <div class="play-button">&#9658;</div>
+                        <div class="p-3 bg-primary text-white">
+                            <h5>Poornan Kari</h5>
+                            <p>Behavioral Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- videos review end  -->
+
+        <!-- FAQ start  -->
+        <div class="container mt-4">
+            <div class="faq-container">
+                <div class="faq-header">Frequently Asked Questions</div>
+                <div class="faq-subheader">Quality as judged by customers. Book at the ideal price!</div>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1Heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                1. What is the best time to visit Bali?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The dry season (April to October) is ideal for outdoor activities and beach fun, while
+                                the wet season (November to March) offers fewer crowds and lush landscapes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2Heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                2. Do I need a visa to travel to Bali?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Visa requirements vary depending on your nationality. Many travelers can get a visa on
+                                arrival or enter visa-free for short stays. Check the latest requirements before
+                                traveling.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3Heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                3. How do I get around in Bali?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can get around in Bali by taxi, scooter, or private car with a driver. Ride-sharing
+                                apps are also widely used for convenience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4Heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                4. Is it safe to drive a scooter in Bali?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Driving a scooter in Bali can be safe if you have prior experience and wear a helmet. Be
+                                cautious of traffic and local driving practices.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ end  -->
+
+        <!-- Payment start  -->
+        <div class="container mt-4">
+            <div class="faq-container">
+                <div class="faq-header">Payment Refund Policy</div>
+                <div class="faq-subheader">Quality as judged by customers. Book at the ideal price!</div>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1Heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                1. What is the best time to visit Bali?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The dry season (April to October) is ideal for outdoor activities and beach fun, while
+                                the wet season (November to March) offers fewer crowds and lush landscapes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2Heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                2. Do I need a visa to travel to Bali?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Visa requirements vary depending on your nationality. Many travelers can get a visa on
+                                arrival or enter visa-free for short stays. Check the latest requirements before
+                                traveling.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3Heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                3. How do I get around in Bali?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can get around in Bali by taxi, scooter, or private car with a driver. Ride-sharing
+                                apps are also widely used for convenience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4Heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                4. Is it safe to drive a scooter in Bali?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Driving a scooter in Bali can be safe if you have prior experience and wear a helmet. Be
+                                cautious of traffic and local driving practices.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ end  -->
+
+
+        <!-- footer start  -->
+        <footer>
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="">
+                    <h2>Ready to get started? Talk to us today</h2>
+                    <button>Get Started</button>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom ">
+                <div class="">
+                    <div class="row">
+                        <!-- Logo and Branding -->
+                        <div class="col-md-3">
+                            <div class="branding">
+                                <img src="img/logo.png" alt="Logo">
+                                <h5>Tripsee</h5>
+                            </div>
+                        </div>
+
+                        <!-- Explore Links -->
+                        <div class="col-md-3">
+                            <h5 class="mb-3">Explore</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Destinations</a></li>
+                                <li><a href="#">Premium Hotels</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Support Links -->
+                        <div class="col-md-3">
+                            <h5 class="mb-3">Support</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="tel:+918596582910">+91-8596582910</a></li>
+                                <li><a href="mailto:sales@tripseetravel.in">sales@tripseetravel.in</a></li>
+                                <li><a href="mailto:tripsee.in@gmail.com">tripsee.in@gmail.com</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Address Section -->
+                        <div class="col-md-3">
+                            <h5 class="mb-3">Address</h5>
+                            <ul class="list-unstyled">
+                                <li>Bali Office: Jl. Akasia, III No.19, Denpasar Bali</li>
+                                <li>G-15, Ground Floor Office No.5, Sector-3, Noida, Uttar Pradesh, 201301</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer end  -->
+
+
+        <!-- pop-up start -->
+        <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Unified Header -->
+                    <div class="modal-header position-relative">
+                        <h5 class="modal-title" id="enquiryModalLabel">Best of Bali | Luxury & Adventure Package</h5>
+                        <p><strong>INR 20,000</strong> <del>INR 30,000</del> <span class="badge bg-success">Save INR
+                                10,000</span></p>
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <div class="close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</div>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                            <input type="email" class="form-control" placeholder="Enter your email address">
+                            <div class="input-group">
+                                <span class="input-group-text">+91</span>
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="date" class="form-control" placeholder="Enter date of travel">
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" placeholder="Enter no of travellers">
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="3" placeholder="Enter your Message"></textarea>
+                            <button type="submit" class="btn btn-enquiry w-100">Send Enquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (!localStorage.getItem("modalClosed")) {
+                    setTimeout(function () {
+                        var enquiryModal = new bootstrap.Modal(document.getElementById('enquiryModal'));
+                        enquiryModal.show();
+                    }, 10000);
+                }
+
+                document.getElementById('enquiryModal').addEventListener('hidden.bs.modal', function () {
+                    localStorage.setItem("modalClosed", true);
+                });
+            });
+        </script>
+        <!-- pop-up end  -->
+        
+
+<!-- eneuiry form scroll  -->
+<script>
+    window.onscroll = function () { handleStickyForm() };
+
+    var form = document.querySelector('.enquiry-form');
+    var formHeight = form.offsetHeight;
+    var stopPoint = formOffsetTop + formHeight; 
+
+    function handleStickyForm() {
+        if (window.pageYOffset > formOffsetTop && window.pageYOffset < stopPoint) {
+            form.classList.add("sticky-form");
+        } else {
+            form.classList.remove("sticky-form");
+        }
+    }
+
+</script>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
